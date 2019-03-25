@@ -10,8 +10,8 @@ gcloud auth configure-docker
 cat <<EOF > build.sh
 #!/bin/bash
 export APPLICATION=debug-container
-PROJECT_ID=`gcloud config get-value project`
-PREFIX=makz-labs
+export PROJECT_ID=`gcloud config get-value project`
+export PREFIX=makz-labs
 
 docker build -t $APPLICATION .
 docker tag $APPLICATION gcr.io/$PROJECT_ID/$PREFIX/$APPLICATION
