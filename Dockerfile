@@ -1,3 +1,3 @@
 FROM ubuntu
 
-RUN apt-get update && apt-get install -qy curl
+RUN apt-get update && apt-get install -qy curl dnsutils
