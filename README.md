@@ -14,5 +14,7 @@ PREFIX=makz-labs
 docker build -t $APPLICATION .
 docker tag $APPLICATION gcr.io/$PROJECT_ID/$PREFIX/$APPLICATION
 docker push gcr.io/$PROJECT_ID/$PREFIX/$APPLICATION
+
+kubectl run my-shell --rm -i --tty --image   gcr.io/$PROJECT_ID/$PREFIX/$APPLICATION -- bash
 ```
   
