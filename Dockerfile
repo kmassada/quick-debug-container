@@ -6,6 +6,8 @@ RUN apt-get update && apt-get install -qqy \
     curl \
     openssh-client \
     lsb-release \
+    apt-transport-https \
+    gcc \
     gnupg \
     git \
     dnsutils && \
