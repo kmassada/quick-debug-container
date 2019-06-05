@@ -7,7 +7,7 @@ vi Dockerfile
 
 gcloud auth configure-docker
 
-cat <<EOF > build.sh
+cat <<'EOF' > build.sh
 #!/bin/bash
 export APPLICATION=debug-container
 export PROJECT_ID=`gcloud config get-value project`
